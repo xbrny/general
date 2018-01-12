@@ -1,0 +1,161 @@
+/*======================= GRID SYSTEM =======================*/
+/*
+* USAGE: Add wdd-design and container class to parent and use row/col-* like usual
+*/
+
+.wdd-grid.container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wdd-grid .row {
+  position: relative;
+  width: 100%;
+}
+
+.wdd-grid .row [class^="col"] {
+  float: left;
+  margin: 0.5rem 2%;
+  min-height: 0.125rem;
+}
+
+.wdd-grid .col-1,
+.wdd-grid .col-2,
+.wdd-grid .col-3,
+.wdd-grid .col-4,
+.wdd-grid .col-5,
+.wdd-grid .col-6,
+.wdd-grid .col-7,
+.wdd-grid .col-8,
+.wdd-grid .col-9,
+.wdd-grid .col-10,
+.wdd-grid .col-11,
+.wdd-grid .col-12 {
+  width: 96%;
+}
+
+.wdd-grid .col-1-sm {
+  width: 4.33%;
+}
+
+.wdd-grid .col-2-sm {
+  width: 12.66%;
+}
+
+.wdd-grid .col-3-sm {
+  width: 21%;
+}
+
+.wdd-grid .col-4-sm {
+  width: 29.33%;
+}
+
+.wdd-grid .col-5-sm {
+  width: 37.66%;
+}
+
+.wdd-grid .col-6-sm {
+  width: 46%;
+}
+
+.wdd-grid .col-7-sm {
+  width: 54.33%;
+}
+
+.wdd-grid .col-8-sm {
+  width: 62.66%;
+}
+
+.wdd-grid .col-9-sm {
+  width: 71%;
+}
+
+.wdd-grid .col-10-sm {
+  width: 79.33%;
+}
+
+.wdd-grid .col-11-sm {
+  width: 87.66%;
+}
+
+.wdd-grid .col-12-sm {
+  width: 96%;
+}
+
+.wdd-grid .row::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.wdd-grid .hidden-sm {
+  display: none;
+}
+
+@media only screen and (min-width: 33.75em) {  /* 540px */
+  .wdd-grid.container {
+    width: 80%;
+  }
+}
+
+@media only screen and (min-width: 45em) {  /* 720px */
+  .wdd-grid .col-1 {
+    width: 4.33%;
+  }
+
+  .wdd-grid .col-2 {
+    width: 12.66%;
+  }
+
+  .wdd-grid .col-3 {
+    width: 21%;
+  }
+
+  .wdd-grid .col-4 {
+    width: 29.33%;
+  }
+
+  .wdd-grid .col-5 {
+    width: 37.66%;
+  }
+
+  .wdd-grid .col-6 {
+    width: 46%;
+  }
+
+  .wdd-grid .col-7 {
+    width: 54.33%;
+  }
+
+  .wdd-grid .col-8 {
+    width: 62.66%;
+  }
+
+  .wdd-grid .col-9 {
+    width: 71%;
+  }
+
+  .wdd-grid .col-10 {
+    width: 79.33%;
+  }
+
+  .wdd-grid .col-11 {
+    width: 87.66%;
+  }
+
+  .wdd-grid .col-12 {
+    width: 96%;
+  }
+
+  .wdd-grid .hidden-sm {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 60em) { /* 960px */
+  .wdd-grid.container {
+    width: 75%;
+    max-width: 60rem;
+  }
+}

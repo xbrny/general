@@ -1,0 +1,86 @@
+/*======================= CHECKBOX =======================*/
+/*
+* USAGE:
+* Use custom style 3 for Contact form Qode Option
+*/
+
+
+/* Customize the label (the container) */
+form.wpcf7-form.cf7_custom_style_3 
+.wpcf7-checkbox .wpcf7-list-item {
+	position: relative;
+	padding-left: 40px;
+	margin-bottom: 12px;
+	left: -14px;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+/* Hide the browser's default checkbox */
+form.wpcf7-form.cf7_custom_style_3 
+.wpcf7-checkbox .wpcf7-list-item input { 
+	position: absolute;
+	opacity: 0;
+	cursor: pointer;
+}
+/* Create a custom checkbox */
+form.wpcf7-form.cf7_custom_style_3 
+.wpcf7-checkbox .wpcf7-list-item .checkmark { 
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 30px;
+	width: 30px;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+    cursor: pointer;
+}
+
+/* On mouse-over, add a ticker symbol / change the style according to your need */
+form.wpcf7-form.cf7_custom_style_3 
+.wpcf7-checkbox .wpcf7-list-item:hover input ~ .checkmark:after { 
+	border: solid #ddd;
+	border-width: 0 3px 3px 0;
+}
+
+/* When the checkbox is checked, add a green background / change the style according to your need */
+form.wpcf7-form.cf7_custom_style_3 
+.wpcf7-checkbox .wpcf7-list-item input:checked ~ .checkmark { 
+	background-color: #13CF00;
+	border: 1px solid #13CF00;
+	border-radius: 2px;
+}
+
+/* When checkbox is checked, display */
+form.wpcf7-form.cf7_custom_style_3 
+.wpcf7-checkbox .wpcf7-list-item input:checked ~.checkmark:after { 
+	display: block;
+}
+
+/* Create the checkmark/indicator */
+form.wpcf7-form.cf7_custom_style_3 
+.wpcf7-checkbox .wpcf7-list-item .checkmark:after { 
+	content: "";
+	position: absolute;
+	left: 11px;
+	top: 4px;
+	width: 6px;
+	height: 15px;
+	border: solid white;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}
+
+/* Make whole label and checkbox curser pointer*/
+form.wpcf7-form.cf7_custom_style_3 .wpcf7-list-item-label {
+	cursor: pointer;
+}
+
+/* Set the width of each checkbox container width*/
+form.wpcf7-form.cf7_custom_style_3 .wpcf7-list-item {
+	width: 280px;
+}

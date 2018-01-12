@@ -1,0 +1,23 @@
+/*======================= SELECT INPUT =======================
+*
+* WHAT IT DOES:- Replace dropdown caret for select with bg-image;
+* HOW TO USE:-
+* Change cf7_custom_style_1|2|3 in this file based on chosen style
+* Add no-caret class to select input in CONTACT FORM
+* Adjust background image url, position, size, and padding-right in this file accordingly
+* Paste this code into General Custom Style in Qode Option
+*/
+
+form.wpcf7-form.cf7_custom_style_1 .no-caret {
+  padding-right: 35px !important;
+  background-image: url("/wp-content/uploads/2018/01/dropdown-caret.png") !important;
+  background-position: 97% center;
+  background-size: 15px !important;
+  background-repeat: no-repeat !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+}
+
+form.wpcf7-form.cf7_custom_style_1 .no-caret::-ms-expand {
+  display: none;
+}
